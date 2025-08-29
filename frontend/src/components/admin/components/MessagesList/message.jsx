@@ -4,11 +4,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './MessagesList.css'
 const API_BASE = import.meta.env.MODE === 'production'
-  ? "https://eynatranitandhra.onrender.com"
+  ? "https://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_API_URL;
 
 const SOCKET_URL = import.meta.env.MODE === 'production'
-  ? "wss://eynatranitandhra.onrender.com"
+  ? "wss://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_SOCKET_URL;
 
 const socket = io(`${SOCKET_URL}`);
