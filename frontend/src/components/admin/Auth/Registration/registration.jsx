@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import OtpInput from 'react-otp-input';
 const API_BASE = import.meta.env.MODE === 'production'
-  ? "https://eynatranitandhra.onrender.com"
+  ? "https://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_API_URL;
 
 
