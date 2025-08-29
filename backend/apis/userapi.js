@@ -1,4 +1,5 @@
 import express from 'express'; 
+import bcrypt from 'bcryptjs';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -7,7 +8,7 @@ const router = express.Router();
 import { Buffer } from 'node:buffer';
 
 import crypto from 'crypto';
-import bcrypt from 'bcrypt';
+
 import User from '../Schema/user.js';
 
 const algorithm = 'aes-256-cbc';
