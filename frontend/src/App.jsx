@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Cookies from 'js-cookie';
 //import CryptoJS from 'crypto-js';
 const API_BASE = import.meta.env.MODE === 'production'
-  ? "https://eynatranitandhra.onrender.com"
+  ? "https://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_API_URL;
 
 const SOCKET_URL = import.meta.env.MODE === 'production'
-  ? "wss://eynatranitandhra.onrender.com"
+  ? "wss://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_SOCKET_URL;
 
 import About from './components/Eyantra/About/about';
