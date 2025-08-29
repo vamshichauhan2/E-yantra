@@ -5,7 +5,7 @@ import axios from 'axios';
 const CLOUD_NAME = import.meta.env.VITE_CLOUD_NAME;
 const UPLOAD_PRESET = import.meta.env.VITE_UPLOAD_PRESET;
 const API_BASE = import.meta.env.MODE === 'production'
-  ? "https://eynatranitandhra.onrender.com"
+  ? "https://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_API_URL;
 
 
