@@ -14,7 +14,7 @@ import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import './projects.css';
 const API_BASE = import.meta.env.MODE === 'production'
-  ? "https://eynatranitandhra.onrender.com"
+  ? "https://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_API_URL;
 
 
