@@ -1,5 +1,6 @@
 import express from 'express'; 
-import bcrypt from 'bcryptjs';
+import bcrypt from 'bcryptjs'; 
+
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -38,7 +39,7 @@ function encrypt(text) {
 router.delete('/delete/all/user', async (req, res) => {
   try {
     const { email, password } = req.body;
-    const COORDINATOR_EMAIL = "flowfix07@gmail.com";
+    const COORDINATOR_EMAIL = "eyantraclub@nitandhra.ac.in";
    
 
     if (email !== COORDINATOR_EMAIL ) {
