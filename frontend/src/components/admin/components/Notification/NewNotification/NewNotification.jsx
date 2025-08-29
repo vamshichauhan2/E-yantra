@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import './newNotification.css'
 import eyantraContext from '../../../../../context/eyantraContext';
 const API_BASE = import.meta.env.MODE === 'production'
-  ? "https://eynatranitandhra.onrender.com"
+  ? "https://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_API_URL;
 
 const NotificationForm = () => {
