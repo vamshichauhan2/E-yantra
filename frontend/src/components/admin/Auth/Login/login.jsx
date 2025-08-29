@@ -3,11 +3,11 @@ import Cookies from 'js-cookie';
 //import CryptoJS from 'crypto-js';
 import { io } from 'socket.io-client';
 const API_BASE = import.meta.env.MODE === 'production'
-  ? "https://eynatranitandhra.onrender.com"
+  ? "https://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_API_URL;
 
 const SOCKET_URL = import.meta.env.MODE === 'production'
-  ? "wss://eynatranitandhra.onrender.com"
+  ? "wss://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_SOCKET_URL;
 
 
