@@ -1,5 +1,6 @@
 import express from 'express'; 
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
+
 import nodemailer from 'nodemailer';
 import dotenv from "dotenv"; 
 import User from '../Schema/user.js';
