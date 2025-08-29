@@ -6,7 +6,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import './event.css';
 const API_BASE = import.meta.env.MODE === 'production'
-  ? "https://eynatranitandhra.onrender.com"
+  ? "https://e-yantra-backend.onrender.com"
   : import.meta.env.VITE_API_URL;
 import EventForm from '../NewEvent/NewEvent';
 
