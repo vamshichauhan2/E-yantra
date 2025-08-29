@@ -1,0 +1,297 @@
+/* Global reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, #root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 16px;
+}
+
+/* Container and typography */
+.team-container {
+  padding: 20px;
+  width: 100vw;
+  min-height:100vh;
+  max-height:auto;
+  margin: 0;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y: auto; 
+  max-height: auto;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.team-list {
+  
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  
+  overflow-y: auto;
+  
+  
+  scrollbar-width: none;
+}
+
+/* Make team-list stack vertically by default on small screens */
+@media only screen and (max-width: 768px) {
+  .team-list {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+/* Responsive media queries */
+
+/* Extra Small Devices (phones, up to 480px) */
+@media only screen and (max-width: 480px) {
+  .team-container {
+    padding: 10px;
+  }
+  .section-heading {
+    font-size: 18px;
+  }
+  .member-card {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .profile-pic, .dummy-image {
+    width: 90px;
+    height: 90px;
+    border-width: 2px;
+  }
+  .team-Input-Field-public {
+    width: 100%;
+  }
+}
+
+/* Small Devices (tablets, 481px to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .member-card {
+    max-width: 280px;
+  }
+  .profile-pic, .dummy-image {
+    width: 100px;
+    height: 100px;
+  }
+  .team-Input-Field-public {
+    width: 300px;
+  }
+}
+
+/* Medium Devices (small laptops, 769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .member-card {
+    max-width: 300px;
+  }
+  .profile-pic, .dummy-image {
+    width: 110px;
+    height: 110px;
+  }
+  .team-Input-Field-public {
+    width: 320px;
+  }
+}
+
+/* Large Devices (desktops, 1025px to 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .member-card {
+    max-width: 320px;
+  }
+  .profile-pic, .dummy-image {
+    width: 120px;
+    height: 120px;
+  }
+  .team-Input-Field-public {
+    width: 350px;
+  }
+}
+
+/* Extra Large Devices (large desktops, above 1201px) */
+@media only screen and (min-width: 1201px) {
+  .member-card {
+    max-width: 320px;
+  }
+  .profile-pic, .dummy-image {
+    width: 120px;
+    height: 120px;
+  }
+.team-Input-Field-public {
+    width: 150px;
+  }
+}
+
+/* Existing styles for member cards and other elements */
+.team-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.member-card {
+
+  max-width: 320px;
+  width:300 !important;
+  min-height:300px;
+   max-height:auto;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.member-image {
+  margin: 10px 0;
+}
+
+.profile-pic,
+.dummy-image {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+  margin-bottom: 10px;
+}
+
+/* Additional styling for details, buttons, and fields as in your original code */
+.empty-msg {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.yes {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.no {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.field-group-container {
+  width: 100%;
+  background: #f8faff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.field-group{
+  display: flex;
+  flex-direction: column;
+  min-height:20px;
+  max-height:auto;
+  margin:5px;
+  padding:5px;
+
+}
+
+.field-group-h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #363636;
+  font-weight: 600;
+}
+
+.field-group-p {
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.expand-icon {
+  margin-top: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.expand-icon:hover {
+  transform: scale(1.2);
+}
+
+.filter-btn {
+  margin-top: 50px;
+  align-self: flex-start;
+}
+
+.filter-icon {
+
+  height: 30px;
+  width: 30px;
+}
+
+.team-Input-Field-public{
+  border: none;
+  outline: none;
+
+  border-bottom: 2px solid white;
+  height: 30px;
+  background-color: transparent;
+  width: 250px;
+}
+
+.publicteamInput-Box{
+  width:100%;
+  height:100%;
+  padding:0px;
+  margin:0px;
+  position:absolute;
+  top:10px;
+  left:10px;
+}

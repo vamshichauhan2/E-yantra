@@ -1,0 +1,213 @@
+/* ---------- CONTACT PAGE ---------- */
+.Contact-page {
+  width: 100vw;
+  margin:0px;
+
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+    padding-top:100px;
+  background-color: transparent;
+}
+
+.Contact-page h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: var(--heading-font);
+  text-align: center;
+}
+
+.Contact-page p {
+  font-size: 1rem;
+  color: rgb(148, 148, 148);
+  text-align: center;
+}
+
+/* Container for address & form */
+.Contact-page-Container {
+  margin:0px;
+  padding:0px;
+  width: 100%;
+  margin-top: 60px;
+  
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Sections inside container */
+.Contact-page-Container-content1,
+.Contact-page-Container-content2 {
+  margin:0px;
+  padding:0px;
+  width: 350px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Form */
+.form-group-contact {
+  margin:0px;
+  padding:0px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group-contact label {
+  align-self: flex-start;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.form-group-contact input,
+.form-group-contact textarea {
+  width: 100%;
+  max-width: 350px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid white;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.form-group-contact textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+/* Contact Info */
+.eyantra-email-content-h,
+.eyantra-address-content-h {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .Contact-page h2 { font-size: 1.6rem; }
+
+  .Contact-page-Container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .Contact-page-Container-content1,
+  .Contact-page-Container-content2 {
+    width: 100%;
+    max-width: 350px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Contact-page-Container-content2 { min-height: 1200px; }
+
+  .form-group-contact input,
+  .form-group-contact textarea {
+    max-width: 100%;
+  }
+
+  .eyantra-address-content,
+  .eyantra-email-content {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .eyantra-address-content img,
+  .eyantra-email-content img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .eyantra-address-content-p {
+    font-size: 14px;
+    width: 200px;
+  }
+
+  .eyantra-address-inner-container { width: 100%; }
+}
+
+/* Medium devices (481px–767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .Contact-page h2 { font-size: 1.8rem; }
+
+  .Contact-page-Container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .Contact-page-Container-content1,
+  .Contact-page-Container-content2 {
+    width: 100%;
+    max-width: 350px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Contact-page-Container-content2 { min-height: 650px; }
+
+  .eyantra-address-content,
+  .eyantra-email-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 370px;
+    margin-top: 40px;
+  }
+}
+
+/* Large tablets and small laptops (768px–991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .Contact-page h2 { font-size: 2rem; }
+
+  .Contact-page-Container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .Contact-page-Container-content2 { min-height: 650px; }
+
+  .eyantra-address-content,
+  .eyantra-email-content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 40px;
+  }
+}
+
+/* Desktops and above (992px+) */
+@media (min-width: 992px) {
+  .Contact-page h2 { font-size: 2.2rem; }
+
+  .Contact-page-Container {
+    justify-content: space-around;
+    gap: 80px;
+  }
+
+  .Contact-page-Container-content2 { min-height: 650px; }
+}
+
+/* Special range (600px–1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .Contact-page-Container-content2 { min-height: 650px; }
+}

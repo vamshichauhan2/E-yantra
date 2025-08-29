@@ -1,0 +1,150 @@
+*,
+#root {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Notification-form {
+  background: black;
+   padding-top:20px ;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px #0000001a;
+  width: 350px;
+  max-width: 450px;
+  min-height: 100vh;
+  max-height: auto;
+}
+
+.Notification-form-title {
+  font-size:18px;
+  margin-left:10px;
+  margin-bottom: 16px;
+  align-self: flex-start;
+  color: white;
+}
+
+.Notification-form__label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: rgb(235, 235, 235);
+}
+
+.Notification-form-input,
+.Notificationt-form-textarea {
+  margin-top:40px;
+  width: 100%;
+  margin-left:5px;
+  
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  background:transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.Notification-form-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.Notification-form-checkbox {
+  margin-left: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.Notification-form-button {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left:20px;
+  width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.Notification-form-button:hover {
+  background-color: #155a9c;
+  color: white;
+}
+
+.Notification-form-image {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+}
+
+.Notification-form-images-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.Notification-form__image-thumb {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.NotificationForm-form-group {
+  margin-top: 20px;
+}
+
+/* Responsive Media Queries */
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .Notification-form {
+    min-width: 90vw; /* nearly full width */
+    max-width: 90vw;
+    padding-left: 1rem;
+  }
+  .Notification-form__input,
+  .Notification-form__textarea {
+    width: 100%; /* full width */
+  }
+  .Notification-form__button {
+    width: 100px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .Notification-form {
+    min-width: 70vw;
+    max-width: 70vw;
+    padding-left: 1.5rem;
+  }
+  .Notification-form__input,
+  .Notification-form__textarea {
+    width: 100%;
+  }
+  .Notification-form__button {
+    width: 100px;
+  }
+}
+
+/* Small desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Notification-form {
+    min-width: 450px;
+    max-width: 450px;
+    padding-left: 2rem;
+  }
+  .Notification-form__input,
+  .Notification-form__textarea {
+    width: 350px;
+  }
+}

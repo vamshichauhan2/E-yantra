@@ -1,0 +1,132 @@
+.Registration{
+  margin:0;
+  padding:0px;
+  width:100vw;
+  height:100vh;
+}
+.Registration-Page{
+  margin:0;
+  padding:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width:100%;
+  height:1200px;
+
+}
+.registration-page-container{
+  margin:0px;
+  width:300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+  background:white;
+  padding-bottom:80px;
+}
+.registration-page-title{
+  color:black;
+}
+.registration-page-subtitle {
+  color:rgb(128, 128, 128);
+}
+.registration-page-otp-inputs,
+.registration-page-inputs,
+.registration-select-page-inputs{
+  width:250px ;
+  border:none;
+  outline:none;
+
+  color:rgb(61, 61, 61);
+  background:transparent;
+  margin-top:20px;
+
+  
+  border-bottom:1px solid rgb(151, 151, 151);
+
+}
+.registration-page-select-labels{
+  margin-left:40px;
+}
+.registration-page-select-labels,
+.registration-page-labels{
+  color:rgb(56, 55, 55);
+  align-self:flex-start;
+  
+  
+}
+.registration-page-form ,
+.form-register1{
+    width:90%;
+
+}
+.registration-page-message{
+  margin-top:20px;
+  color:black;
+  
+  font-family: fantasy;
+}
+.registration-page-button{
+   width:150px;
+   color:white;
+   background-color: rgb(5, 138, 255);
+   font-size:14px;
+   margin-top:20px;
+}
+.registration-page-input{
+  background-color:rgb(141, 141, 141);
+  color:blue;
+}
+.eye-icon{
+  color:black;
+}
+
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .registration-page-container{
+ 
+  width:300px;
+  
+}
+}
+
+/* Small devices (phones ≥ 576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .registration-page-container{
+ 
+  width:450px;
+  
+}
+}
+
+/* Medium devices (tablets ≥ 768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .registration-page-container{
+ 
+  width:500px;
+  
+}
+}
+
+/* Large devices (desktops ≥ 992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.registration-page-container{
+ 
+  width:500px;
+  
+}
+}
+
+/* Extra large devices (large desktops ≥ 1200px) */
+@media (min-width: 1200px) {
+  .registration-page-container{
+ 
+  width:500px;
+  
+}
+}
+

@@ -1,0 +1,150 @@
+/* ---------------- TEAM FORM CSS ---------------- */
+*,
+#root {
+  margin: 0px;
+  padding: 0px;
+}
+.team-form {
+    background: black;
+   padding-top:20px ;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px #0000001a;
+  width: 100%;
+  padding-left:10px;
+  max-width: 450px;
+  min-height: 200vh;
+  max-height: auto;
+  
+}
+
+.team-form-title {
+  margin-bottom: 20px;
+  align-self: flex-start;
+  color: white;
+}
+
+.team-form-label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: rgb(235, 235, 235);
+}
+
+.team-form-input,
+.team-form-textarea {
+    margin-top:40px;
+  width: 100%;
+
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  background:transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.team-form-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.team-form-checkbox {
+  margin-left: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.team-form-button {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  width: 150px;
+  transition: background-color 0.3s ease;
+}
+
+.team-form-button:hover {
+  background-color: #155a9c;
+  color: white;
+}
+
+.team-form-image {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+}
+
+.team-form-images-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.team-form-image-thumb {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.TeamForm-form-group {
+  margin-top: 20px;
+}
+
+
+/* ---------------- RESPONSIVE MEDIA QUERIES ---------------- */
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .team-form {
+    min-width: 90vw;
+    max-width: 90vw;
+    padding-left: 1rem;
+  }
+  .team-form-input,
+  .team-form-textarea {
+    width: 100%;
+  }
+  .team-form-button {
+  width: 150px;
+    
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .team-form {
+    min-width: 70vw;
+    max-width: 70vw;
+    padding-left: 1.5rem;
+  }
+  .team-form-input,
+  .team-form-textarea {
+    width: 100%;
+  }
+  .team-form-button {
+    width: 150px;
+  }
+}
+
+/* Small desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .team-form {
+    min-width: 450px;
+    max-width: 450px;
+    padding-left: 2rem;
+  }
+  .team-form-input,
+  .team-form-textarea {
+    width: 350px;
+  }
+}

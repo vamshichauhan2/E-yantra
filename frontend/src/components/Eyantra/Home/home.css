@@ -1,0 +1,1292 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+#root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 16px;
+}
+
+
+.Home-Page {
+  position: relative;
+  background: url('/HomePageBackground2.jpeg') center/cover no-repeat;
+  width: 100vw;
+
+  min-height: 500px;
+  max-height: 100vh;
+  margin: 0;
+  padding:0px ;
+    padding-top:20px;
+}
+
+
+.eyantra-description {
+  align-self: flex-end;
+  color: white;
+  font-weight: 500;
+  font-family: monospace;
+  margin-left: 10px;
+}
+
+.Home-Club-Content h2 {
+  margin: 0;
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+  animation: slide-in 2s forwards;
+}
+
+
+
+
+.Home-Page-Top-Content {
+     margin:0px;
+     padding:0px;
+     width:100%;
+     
+     display: flex;
+
+
+}
+.Footer-container{
+  display:flex;
+  width:100%;
+  margin:0px;
+  padding:0px;
+  margin-top:90px;
+}
+.slick-slide {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.slick-list {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.Notification-Container {
+  margin-top:5px;
+  
+
+  width: 100vw !important;
+  padding-top: 30px;
+  overflow-x: clip; 
+  box-sizing: border-box;
+}
+
+
+.Notification-Container ul {
+  display: flex;
+  width: calc(100vw * 3);
+  animation: notificationSlider 30s linear infinite;
+}
+
+.Notification-Container ul:hover { animation-play-state: paused; }
+
+.Notification-Container li {
+  list-style: none;
+  width: 100vw;
+  color:white;
+  flex-shrink: 0;
+}
+
+@keyframes notificationSlider {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100vw * 2)); }
+}
+
+
+@media (max-width: 575.98px) { 
+  .Home-Page-Top-Content {
+    position: absolute;
+    top:120px;
+         flex-direction: column;
+         
+     
+
+
+}
+.Home-Page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vision-mission{
+  margin:0px;
+  padding:0px;
+  width:80%;
+  margin-top:500px !important;
+}
+.Home-Club-Content{
+    margin-left:20px;
+   height:300px;
+   
+
+}
+.vision-mission-heading{
+  color:rgb(234, 234, 234);
+  font-family: fantasy;
+}
+.vision{
+  margin:0px;
+  padding:0px;
+  color:rgb(240, 239, 239);
+  font-size:14px;
+}
+.mission{
+  margin:0px;
+  padding:0px;
+    color:white;
+  font-size:14px;
+
+}
+.Home-Club-Content h3,
+.Home-Club-Content h2{
+  margin:0px;
+  color:white;
+  font-family: fantasy;
+  font-size:25px;
+}
+.Home-Club-Content span{
+  font-size:20px;
+  font-weight:600;
+  color:rgb(213, 213, 213);
+
+}
+.our-works{
+  text-align: center;
+}
+.slider-card-Large-device{
+  display:none;
+}
+.slider-card-Small-device{
+  align-items: center;
+  justify-content: center;
+
+  display:flex;
+  gap:20px;
+  flex-wrap: wrap;
+}
+.slider-card{
+  padding:0px;
+  margin:0px;
+  
+  background-color:rgb(62, 62, 62);
+  width:250px;
+  height:300px;
+  
+}
+.Slider-card-inner{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-container-ourworks{
+  margin:0px;
+  padding:0px;
+}
+.Slider-card-inner p{
+  color:rgb(174, 174, 174);
+  font-size:13px;
+    margin:0px;
+  font-family: sans-serif;
+}
+.image-container-ourworks h4{
+  margin:0px;
+  color:rgb(221, 221, 221);
+}
+.our-works-heading{
+  color:white;
+  font-size:16px;
+  margin-top:100px;
+}
+.our-works-paragraph{
+  margin-top:10px;
+  font-size:14px;
+  color:aliceblue;
+}
+.Team-Container{
+  position: relative;
+  width:90vw;
+  margin:0px;
+  padding:0px;
+  
+}
+.home-stats-grid{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding:0px;
+  margin:0px;
+    margin-top:100px;
+    gap:20px;
+}
+
+.home-stat-card{
+  background-color: rgb(63, 63, 63);
+  width:200px;
+  height:200px;
+  padding:0px;
+  margin:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.home-stat-card h2{
+  font-size:18px;
+  color:white;
+  margin:0px;
+  font-family: fantasy;
+}
+.home-stat-card p{
+  margin:0px;
+  font-size:14px;
+  color:rgb(201, 201, 201);
+  font-family: fantasy;
+
+}
+.home-stat-card h3{
+   margin:0px;
+  font-size:14px;
+  color:green;
+  font-family: fantasy;
+
+}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+ 
+  .Home-Page-Top-Content {
+    position: absolute;
+    top:120px;
+         flex-direction: column;
+         
+         
+     
+
+
+}
+.Home-Page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vision-mission{
+  margin:0px;
+  padding:0px;
+  width:80%;
+  margin-top:500px !important;
+}
+.Home-Club-Content{
+   height:300px;
+   width:400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.vision-mission-heading{
+  color:rgb(234, 234, 234);
+  font-family: fantasy;
+}
+.vision{
+  margin:0px;
+  padding:0px;
+  color:rgb(174, 174, 174);
+  font-size:14px;
+}
+.mission{
+  margin:0px;
+  padding:0px;
+    color:rgb(174, 174, 174);
+  font-size:14px;
+
+}
+.Home-Club-Content h3,
+.Home-Club-Content h2{
+  margin:0px;
+  color:white;
+  font-family: fantasy;
+  font-size:25px;
+}
+.Eyantra-Description-Content{
+  display: flex;
+  width:400px;
+  align-self:flex-end;
+  
+}
+.Home-Club-Content span{
+  font-size:20px;
+  font-weight:600;
+  color:rgb(213, 213, 213);
+
+}
+.our-works{
+  text-align: center;
+}
+.slider-card-Large-device{
+  display:none;
+}
+.slider-card-Small-device{
+  align-items: center;
+  justify-content: center;
+
+  display:flex;
+  gap:20px;
+  flex-wrap: wrap;
+}
+.slider-card{
+  padding:0px;
+  margin:0px;
+  
+  background-color:rgb(62, 62, 62);
+  width:250px;
+  height:300px;
+  
+}
+.Slider-card-inner{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-container-ourworks{
+  margin:0px;
+  padding:0px;
+}
+.Slider-card-inner p{
+  color:rgb(174, 174, 174);
+  font-size:13px;
+    margin:0px;
+  font-family: sans-serif;
+}
+.image-container-ourworks h4{
+  margin:0px;
+  color:rgb(221, 221, 221);
+}
+.our-works-heading{
+  color:white;
+  font-size:16px;
+  margin-top:100px;
+}
+.our-works-paragraph{
+  margin-top:10px;
+  font-size:14px;
+  color:aliceblue;
+}
+.Team-Container{
+  position: relative;
+  width:90vw;
+  margin:0px;
+  padding:0px;
+  
+}
+.home-stats-grid{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding:0px;
+  margin:0px;
+    margin-top:100px;
+    gap:20px;
+}
+
+.home-stat-card{
+  background-color: rgb(63, 63, 63);
+  width:200px;
+  height:200px;
+  padding:0px;
+  margin:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.home-stat-card h2{
+  font-size:18px;
+  color:white;
+  margin:0px;
+  font-family: fantasy;
+}
+.home-stat-card p{
+  margin:0px;
+  font-size:14px;
+  color:rgb(201, 201, 201);
+  font-family: fantasy;
+
+}
+.home-stat-card h3{
+   margin:0px;
+  font-size:14px;
+  color:green;
+  font-family: fantasy;
+
+}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .slider-card-Small-device{
+  align-items: center;
+  justify-content: center;
+
+  display:none;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+ .Home-Page-Top-Content {
+    position: absolute;
+    top:120px;
+         flex-direction: column;
+         
+         
+     
+
+
+}
+.Home-Page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vision-mission{
+  margin:0px;
+  padding:0px;
+  width:80%;
+  margin-top:500px !important;
+}
+.Home-Club-Content{
+   height:300px;
+   width:400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.vision-mission-heading{
+  color:rgb(234, 234, 234);
+  font-family: fantasy;
+}
+.vision{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0px;
+  padding:0px;
+  color:rgb(174, 174, 174);
+  font-size:14px;
+}
+.mission{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0px;
+  padding:0px;
+    color:rgb(174, 174, 174);
+  font-size:14px;
+
+}
+.Home-Club-Content h3,
+.Home-Club-Content h2{
+  margin:0px;
+  color:white;
+  font-family: fantasy;
+  font-size:25px;
+}
+.Eyantra-Description-Content{
+  display: flex;
+  width:400px;
+  align-self:flex-end;
+  
+}
+.Home-Club-Content span{
+  font-size:20px;
+  font-weight:600;
+  color:rgb(213, 213, 213);
+
+}
+.our-works{
+  text-align: center;
+}
+
+.slider-card{
+  padding:0px;
+  margin:0px;
+  
+  background-color:rgb(62, 62, 62);
+  width:250px;
+  height:300px;
+  
+}
+.Slider-card-inner{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-container-ourworks{
+  margin:0px;
+  padding:0px;
+}
+.Slider-card-inner p{
+  color:rgb(174, 174, 174);
+  font-size:13px;
+    margin:0px;
+  font-family: sans-serif;
+}
+.image-container-ourworks h4{
+  margin:0px;
+  color:rgb(221, 221, 221);
+}
+.our-works-heading{
+  color:white;
+  font-size:16px;
+  margin-top:100px;
+}
+.our-works-paragraph{
+  margin-top:10px;
+  font-size:14px;
+  color:aliceblue;
+}
+.Team-Container{
+  position: relative;
+  width:90vw;
+  margin:0px;
+  padding:0px;
+  
+}
+.home-stats-grid{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding:0px;
+  margin:0px;
+    margin-top:100px;
+    gap:20px;
+}
+
+.home-stat-card{
+  background-color: rgb(63, 63, 63);
+  width:200px;
+  height:200px;
+  padding:0px;
+  margin:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.home-stat-card h2{
+  font-size:18px;
+  color:white;
+  margin:0px;
+  font-family: fantasy;
+}
+.home-stat-card p{
+  margin:0px;
+  font-size:14px;
+  color:rgb(201, 201, 201);
+  font-family: fantasy;
+
+}
+.home-stat-card h3{
+   margin:0px;
+  font-size:14px;
+  color:green;
+  font-family: fantasy;
+
+}
+.slider-card {
+  background: #00c6ff;
+  color: white;
+  padding: 2rem;
+}
+
+.slider-card h4 {
+  font-family: fantasy;
+  font-size: 25px;
+  margin: 0;
+}
+
+.slider-card p {
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  font-size: 12px;
+  margin: 0;
+}
+
+.Slider-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .Slider-card-inner { flex-direction: column; }
+  .Home-Page-Top-Content { flex-direction: column; }
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+  .slider-card-Small-device{
+  align-items: center;
+  justify-content: center;
+
+  display:none;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+ .Home-Page-Top-Content {
+    position: absolute;
+    top:120px;
+         flex-direction: column;
+         
+         
+     
+
+
+}
+.Home-Page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vision-mission{
+  display: flex;
+   justify-content:space-between;
+  margin:0px;
+  padding:0px;
+  width:80%;
+  margin-top:500px !important;
+}
+.Home-Club-Content{
+   height:300px;
+   width:400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.vision-mission-heading{
+  color:rgb(234, 234, 234);
+  font-family: fantasy;
+}
+.vision{
+  margin:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:450px;
+  padding:0px;
+  color:rgb(174, 174, 174);
+  font-size:14px;
+}
+.mission{
+  margin:0px;
+  padding:0px;
+  width:450px;
+    color:rgb(174, 174, 174);
+  font-size:14px;
+
+}
+.Home-Club-Content h3,
+.Home-Club-Content h2{
+  margin:0px;
+  color:white;
+  font-family: fantasy;
+  font-size:25px;
+}
+.Eyantra-Description-Content{
+  display: flex;
+  width:400px;
+  align-self:flex-end;
+  
+}
+.Home-Club-Content span{
+  font-size:20px;
+  font-weight:600;
+  color:rgb(213, 213, 213);
+
+}
+.our-works{
+  text-align: center;
+}
+
+.slider-card{
+  padding:0px;
+  margin:0px;
+  
+  background-color:rgb(62, 62, 62);
+  width:250px;
+  height:300px;
+  
+}
+.Slider-card-inner{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-container-ourworks{
+  margin:0px;
+  padding:0px;
+}
+.Slider-card-inner p{
+  color:rgb(174, 174, 174);
+  font-size:13px;
+    margin:0px;
+  font-family: sans-serif;
+}
+.image-container-ourworks h4{
+  margin:0px;
+  color:rgb(221, 221, 221);
+}
+.our-works-heading{
+  color:white;
+  font-size:16px;
+  margin-top:100px;
+}
+.our-works-paragraph{
+  margin-top:10px;
+  font-size:14px;
+  color:aliceblue;
+}
+.Team-Container{
+  position: relative;
+  width:90vw;
+  margin:0px;
+  padding:0px;
+  
+}
+.home-stats-grid{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding:0px;
+  margin:0px;
+    margin-top:100px;
+    gap:20px;
+}
+
+.home-stat-card{
+  background-color: rgb(63, 63, 63);
+  width:200px;
+  height:200px;
+  padding:0px;
+  margin:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.home-stat-card h2{
+  font-size:18px;
+  color:white;
+  margin:0px;
+  font-family: fantasy;
+}
+.home-stat-card p{
+  margin:0px;
+  font-size:14px;
+  color:rgb(201, 201, 201);
+  font-family: fantasy;
+
+}
+.home-stat-card h3{
+   margin:0px;
+  font-size:14px;
+  color:green;
+  font-family: fantasy;
+
+}
+.slider-card {
+  background: #00c6ff;
+  color: white;
+  padding: 2rem;
+}
+
+.slider-card h4 {
+  font-family: fantasy;
+  font-size: 25px;
+  margin: 0;
+}
+
+.slider-card p {
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  font-size: 12px;
+  margin: 0;
+}
+
+.Slider-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+
+  .slider-card-Small-device{
+  align-items: center;
+  justify-content: center;
+
+  display:none;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+ .Home-Page-Top-Content {
+    position: absolute;
+    top:120px;
+         flex-direction: column;
+         
+         
+     
+
+
+}
+.Home-Page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vision-mission{
+  display: flex;
+  margin:0px;
+  padding:0px;
+  
+  width:80%;
+  margin-top:500px !important;
+}
+.Home-Club-Content{
+   height:300px;
+   width:400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.vision-mission-heading{
+  color:rgb(234, 234, 234);
+  font-family: fantasy;
+}
+.vision{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:500px;
+  color:rgb(174, 174, 174);
+  font-size:14px;
+}
+.mission{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:600px;
+    color:rgb(174, 174, 174);
+  font-size:14px;
+
+}
+.Home-Club-Content h3,
+.Home-Club-Content h2{
+  margin:0px;
+  color:white;
+  font-family: fantasy;
+  font-size:25px;
+}
+.Eyantra-Description-Content{
+  display: flex;
+  width:400px;
+  align-self:flex-end;
+  
+}
+.Home-Club-Content span{
+  font-size:20px;
+  font-weight:600;
+  color:rgb(213, 213, 213);
+
+}
+.our-works{
+  text-align: center;
+}
+
+.slider-card{
+  padding:0px;
+  margin:0px;
+  
+  background-color:rgb(62, 62, 62);
+  width:250px;
+  height:300px;
+  
+}
+.Slider-card-inner{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-container-ourworks{
+  margin:0px;
+  padding:0px;
+}
+.Slider-card-inner p{
+  color:rgb(174, 174, 174);
+  font-size:13px;
+    margin:0px;
+  font-family: sans-serif;
+}
+.image-container-ourworks h4{
+  margin:0px;
+  color:rgb(221, 221, 221);
+}
+.our-works-heading{
+  color:white;
+  font-size:16px;
+  margin-top:100px;
+}
+.our-works-paragraph{
+  margin-top:10px;
+  font-size:14px;
+  color:aliceblue;
+}
+.Team-Container{
+  position: relative;
+  width:90vw;
+  margin:0px;
+  padding:0px;
+  
+}
+.home-stats-grid{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding:0px;
+  margin:0px;
+    margin-top:100px;
+    gap:20px;
+}
+
+.home-stat-card{
+  background-color: rgb(63, 63, 63);
+  width:200px;
+  height:200px;
+  padding:0px;
+  margin:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.home-stat-card h2{
+  font-size:18px;
+  color:white;
+  margin:0px;
+  font-family: fantasy;
+}
+.home-stat-card p{
+  margin:0px;
+  font-size:14px;
+  color:rgb(201, 201, 201);
+  font-family: fantasy;
+
+}
+.home-stat-card h3{
+   margin:0px;
+  font-size:14px;
+  color:green;
+  font-family: fantasy;
+
+}
+.slider-card {
+  background: #00c6ff;
+  color: white;
+  padding: 2rem;
+}
+
+.slider-card h4 {
+  font-family: fantasy;
+  font-size: 25px;
+  margin: 0;
+}
+
+.slider-card p {
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  font-size: 12px;
+  margin: 0;
+}
+
+.Slider-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+}
+
+@media (min-width: 1400px) { 
+
+  .slider-card-Small-device{
+  align-items: center;
+  justify-content: center;
+
+  display:none;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+ .Home-Page-Top-Content {
+    position: absolute;
+    top:120px;
+         flex-direction: column;
+         
+         
+     
+
+
+}
+.Home-Page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vision-mission{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  gap:60px;
+  margin-top:500px !important;
+}
+.Home-Club-Content{
+   height:300px;
+   width:400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.vision-mission-heading{
+  color:rgb(234, 234, 234);
+  font-family: fantasy;
+}
+.vision{
+  margin:0px;
+  padding:0px;
+  color:rgb(174, 174, 174);
+  font-size:14px;
+}
+.mission{
+  margin:0px;
+  padding:0px;
+    color:rgb(174, 174, 174);
+  font-size:14px;
+
+}
+.Home-Club-Content h3,
+.Home-Club-Content h2{
+  margin:0px;
+  color:white;
+  font-family: fantasy;
+  font-size:25px;
+}
+.Eyantra-Description-Content{
+  display: flex;
+  width:400px;
+  align-self:flex-end;
+  
+}
+.Home-Club-Content span{
+  font-size:20px;
+  font-weight:600;
+  color:rgb(213, 213, 213);
+
+}
+.our-works{
+  text-align: center;
+}
+
+.slider-card{
+  padding:0px;
+  margin:0px;
+  
+  background-color:rgb(62, 62, 62);
+  width:250px;
+  height:300px;
+  
+}
+.Slider-card-inner{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-container-ourworks{
+  margin:0px;
+  padding:0px;
+}
+.Slider-card-inner p{
+  color:rgb(174, 174, 174);
+  font-size:13px;
+    margin:0px;
+  font-family: sans-serif;
+}
+.image-container-ourworks h4{
+  margin:0px;
+  color:rgb(221, 221, 221);
+}
+.our-works-heading{
+  color:white;
+  font-size:16px;
+  margin-top:100px;
+}
+.our-works-paragraph{
+  margin-top:10px;
+  font-size:14px;
+  color:aliceblue;
+}
+.Team-Container{
+  position: relative;
+  width:90vw;
+  margin:0px;
+  padding:0px;
+  
+}
+.home-stats-grid{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding:0px;
+  margin:0px;
+    margin-top:100px;
+    gap:20px;
+}
+
+.home-stat-card{
+  background-color: rgb(63, 63, 63);
+  width:200px;
+  height:200px;
+  padding:0px;
+  margin:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.home-stat-card h2{
+  font-size:18px;
+  color:white;
+  margin:0px;
+  font-family: fantasy;
+}
+.home-stat-card p{
+  margin:0px;
+  font-size:14px;
+  color:rgb(201, 201, 201);
+  font-family: fantasy;
+
+}
+.home-stat-card h3{
+   margin:0px;
+  font-size:14px;
+  color:green;
+  font-family: fantasy;
+
+}
+.slider-card {
+  background: #00c6ff;
+  color: white;
+  padding: 2rem;
+}
+
+.slider-card h4 {
+  font-family: fantasy;
+  font-size: 25px;
+  margin: 0;
+}
+
+.slider-card p {
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  font-size: 12px;
+  margin: 0;
+}
+
+.Slider-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+}
+
+
+.club-coordinator-details{
+  margin:0px;
+  padding:0px;
+  padding:10px;
+  color:whitesmoke;
+  font-size:19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top:50px;
+
+
+}
+

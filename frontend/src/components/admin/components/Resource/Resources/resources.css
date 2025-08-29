@@ -1,0 +1,182 @@
+/* Main container */
+.adminresources-container {
+  width: 100vw;
+  background:white;
+  min-height:100vh;
+  max-height:auto;
+  margin:0px;
+  padding:0px;
+  overflow-y:scroll;
+  scrollbar-width:none;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+/* Title */
+.adminresources-heading{
+  text-align: center;
+  color:#000;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.adminresources-description{
+  color:#555;
+  font-size:12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom:20px;
+}
+/* Grid layout for resource cards */
+.adminresources-grid {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Resource card */
+.adminresource-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  width:300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.adminresource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.16);
+}
+
+/* Delete button */
+.admindelete-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.admindelete-btn:hover {
+  opacity: 1;
+}
+
+/* Video and iframe wrapper (responsive, 16:9) */
+.adminvideo-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+.adminvideo-wrapper iframe,
+.adminvideo-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Titles and text */.adminresource-title {
+  font-size: 1.25rem;
+  color:#555;
+  font-family: fantasy;
+  margin: 8px 0;
+}
+.adminresource-description {
+  font-size: 0.95rem;
+  color: #696868;
+}
+
+.adminresource-meta {
+  font-size: 0.85rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #666;
+}
+
+/* Links */
+.adminresource-link {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #1976d2;
+  padding: 6px 12px;
+  border-radius: 6px;
+  align-self: flex-start;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.adminresource-link:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+/* Floating Add Button (responsive style) */
+.adminadd-resource-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 📱 Responsive adjustments */
+@media (max-width: 768px) {
+  .adminresources-heading {
+    font-size: 1.6rem;
+  }
+
+  .adminresource-title {
+    font-size: 1.1rem;
+  }
+
+  .adminresource-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .adminresources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .adminresources-heading {
+    font-size: 1.4rem;
+  }
+}
+.adminadd-resource-btn{
+   position: fixed;
+  z-index: 1101;
+  right: 40px;
+  bottom: 10px;
+  background: linear-gradient(135deg, #5dadff 70%, #307cbe 100%);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  box-shadow: 0 6px 30px rgba(36,103,191,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.23s;
+}
+.adminresources-list{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.adminresources-text-empty{
+  color:#000;
+  font-family: fantasy;
+}

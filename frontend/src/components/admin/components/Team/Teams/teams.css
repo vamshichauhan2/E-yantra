@@ -1,0 +1,259 @@
+.adminteam-page {
+   width: 100vw;
+   min-height:100vh;
+   max-height:auto;
+   background: white;
+   
+   margin: 0 auto;
+  padding-top:200px;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   color: #282c34;
+}
+
+.adminteam-page-h1 {
+   text-align: center;
+   margin-bottom: 30px;
+   font-size: 1rem;
+   border-bottom: 3px solid #61dafb;
+   padding-bottom: 8px;
+}
+
+.adminteam-page-h5 {
+   margin:0px;
+   color: #444;
+   font-size: 14px;
+   border-bottom: 2px solid #ddd;
+   padding-bottom: 6px;
+}
+.adminteam-page-p{
+   margin:0px;
+   color: #797979;
+   font-size: 14px;
+   margin-left:10px;
+   border-bottom: 2px solid #ddd;
+   padding-bottom: 6px;
+
+}
+.adminteam-list {
+   display: flex;
+   flex-wrap: wrap;
+     align-items: center;
+ 
+   gap: 25px;
+   justify-content: center;
+}
+
+.adminmember-card {
+   position: relative;
+   background: white;
+   width:280px !important;
+   min-height:300px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   max-height:auto;
+   border-radius: 12px;
+   box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+   overflow: hidden;
+   transition: transform 0.25s ease;
+   cursor: default;
+}
+
+.adminmember-card:hover {
+   transform: translateY(-5px);
+}
+
+.adminmember-photo {
+   width: 100%;
+   height: 220px;
+   object-fit: cover;
+}
+
+.adminmember-info {
+   padding: 15px 18px;
+   text-align: center;
+}
+
+.adminmember-info h3 {
+   margin: 10px 0 5px;
+   font-size: 1.2rem;
+}
+
+.adminmember-role {
+   font-weight: 600;
+   color: #61dafb;
+   margin-bottom: 8px;
+}
+
+.adminmember-bio {
+   font-size: 0.95rem;
+   color: #666;
+}
+
+.adminfilter-btn{  
+
+  position: absolute;
+  top:80px;
+  right:20px;
+  display: flex;
+  
+  flex-direction: column;
+
+
+  align-items: center;
+
+
+  fill:#282c34;
+
+
+}
+
+/* Extra small devices (phones, max-width 400px) */
+@media (max-width: 400px) {
+   .adminteam-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+   }
+   .adminmember-card {
+      width: 90%;
+      max-width: 300px;
+   }
+   .adminfilter-btn{  
+  position: absolute;
+  top:0px;
+  right:0px;
+  display: flex;
+  
+  flex-direction: column;
+
+
+  align-items: center;
+
+
+  fill:#282c34;
+
+
+}
+}
+
+/* Small devices (phones portrait) */
+@media (min-width: 401px) and (max-width: 600px) {
+   .adminteam-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+   }
+   .adminmember-card {
+      width: 80%;
+      max-width: 300px;
+   }
+   .adminfilter-btn{  
+  position: absolute;
+  top:30px;
+  right:10px;
+  display: flex;
+  
+  flex-direction: column;
+
+
+  align-items: center;
+
+
+  fill:#282c34;
+
+
+   }
+}
+
+/* Medium devices (tablets landscape) */
+@media (min-width: 601px) and (max-width: 900px) {
+   .adminteam-list {
+      justify-content: center;
+      gap: 22px;
+   }
+   .adminmember-card {
+      width: 250px !important;
+   }
+}
+
+/* Large devices (small laptops) */
+@media (min-width: 901px) and (max-width: 1200px) {
+   .adminteam-list {
+      justify-content: center;
+      gap: 25px;
+   }
+   .adminmember-card {
+      width: 270px !important;
+   }
+   .adminInput-Field{
+
+  margin-left:60px;
+}
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media (min-width: 1201px) {
+   .adminteam-list {
+      justify-content: center;
+      gap: 25px;
+   }
+   .adminmember-card {
+      width: 300px !important;
+   }
+   .adminInput-Field-Team{
+
+  margin-left:60px;
+}
+}
+.adminInput-Field-Team{
+  color:#444;
+  border:none;
+  outline:none;
+  background:transparent;
+  border-bottom:1px solid black;
+  width:300px;
+  min-width:150px !important;
+  max-width:250px !important;
+
+}
+
+.adminAddTeamIcon {
+  position: fixed;
+  z-index: 1101;
+  right: 40px;
+  bottom: 10px;
+  background: linear-gradient(135deg, #5dadff 70%, #307cbe 100%);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  box-shadow: 0 6px 30px rgba(36,103,191,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.23s;
+}
+
+.adminteamdelete-btn{
+   color:#282c34;
+   position: absolute;
+   top:20px;
+   font-size:20px;
+   font-family: fantasy;
+   cursor: pointer;
+   right:20px;
+}
+.eyantra-events-empty-team{
+   width:250px;
+   height:250px;
+}
+.adminprofile-pic {
+   width: 250px;
+   height: 250px;
+   background-size: cover;
+   background-position: center;
+   border-radius: 50%;
+   background-repeat: no-repeat;
+}

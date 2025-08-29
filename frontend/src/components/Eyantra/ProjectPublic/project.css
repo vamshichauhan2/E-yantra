@@ -1,0 +1,130 @@
+.publicproject-cards-container {
+  padding: 9rem 1rem 2rem 1rem;
+  width:100vw;
+  position: relative;
+  min-height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background:black;
+  border-radius: 20px;
+  box-shadow: 0 6px 28px rgba(56,104,187,0.10);
+  position: relative;
+  align-items: flex-start;
+}
+
+.publicAddeventIcon {
+  position: fixed;
+  z-index: 1101;
+  right: 40px;
+  bottom: 45px;
+  background: linear-gradient(135deg, #5dadff 70%, #307cbe 100%);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  box-shadow: 0 6px 30px rgba(36,103,191,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.23s;
+}
+
+.publicAddeventIcon:hover {
+  box-shadow: 0 10px 40px rgba(36,103,191,0.22);
+  background: linear-gradient(135deg, #307cbe 90%, #5dadff 100%);
+}
+
+.publicproject-card{
+  background: #fff;
+  box-shadow: 0 2px 18px rgba(48,124,190,0.07);
+  
+  
+  width: 320px;
+  
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.14s cubic-bezier(.05,1.35,.4,1.25), box-shadow 0.13s;
+  border-left: 6px solid #5dadff;
+  min-width: 270px
+}
+
+.publicproject-card:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 40px rgba(48,124,190,0.25);
+}
+
+
+.publicproject-card h4 {
+
+  font-size: 1rem;
+  font-weight: 700;
+  margin:0;
+  color: #2367bf;
+  letter-spacing: 1px;
+}
+
+.publicproject-card p {
+
+  color: #9eabb8;
+  font-size:14px !important;
+  letter-spacing: .4px;
+  margin-left:10px;
+  line-height: 1.45;
+}
+
+.publicdelete-button {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: #ea3a50;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.15s cubic-bezier(.55,1.34,.59,1.08);
+  z-index: 2;
+}
+
+.publicdelete-button:hover {
+  color: #a3122b;
+}
+.publicproject-cards-container-h4{
+  color:white;
+  font-family:fantasy;
+  display: flex;
+  align-self:center;
+  text-align: center;
+
+}
+.publicproject-cards-container-p{
+  color:rgb(183, 183, 183);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  align-self:center;
+  text-align: center;
+
+}
+.publicprojects-list{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.publicProject-text-empty{
+  color:white;
+  font-family: fantasy;
+}
+.publicproject-poster{
+  width:300px;
+  background-size:cover;
+  
+  height:300px;
+}

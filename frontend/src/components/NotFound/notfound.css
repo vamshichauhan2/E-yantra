@@ -1,0 +1,16 @@
+.NotFound-Page{
+    margin:0px;
+    padding:0px;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    background-color:black;
+    text-align: center;
+}
+.not-found-h1{
+    color:white !important;
+}

@@ -1,0 +1,229 @@
+.Navbar {
+ 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-height:60px;
+  
+
+  display: flex;
+  
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 6px 12px -4px #0072ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  z-index: 1000;
+}
+
+
+
+.Nav-item {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.Nav-items {
+  list-style: none;
+  display: flex;
+   overflow-y:scroll;
+  scrollbar-width:none;
+ 
+ 
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.eyantra-Logo {
+  margin-left: 40px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.Nav-Anchor {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.Nav-Anchor:hover {
+  color: #00c6ff;
+}
+
+.Nav-Anchor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0072ff, #00f7ff);
+  transition: width 0.3s ease;
+}
+
+.Nav-Anchor:hover::after {
+  width: 100%;
+}
+
+.Message-icon {
+  list-style: none;
+  height: 40px;
+  width: 40px;
+  margin-top: 25px;
+}
+
+.side-bar-both-view {
+  width: 350px;
+ margin:0px;
+ padding:0px;
+  max-width: 90vw;
+}
+
+.Close-btn-message {
+  margin-left: 30px;
+}
+  .Nav-Items-Mobile,
+  .Nav-Items-Mobile-view {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0px 8px 20px -2px #0072ff;
+    padding: 15px 0;
+    z-index: 1050;
+  }
+
+
+@media (min-width: 768px) {
+ .Navbar{
+    justify-content: center;
+    
+  }
+  .Navbar-Menu {
+    display: none;
+  }
+  .Nav-Items-Mobile,
+  .Nav-Items-Mobile-view {
+    display: none !important;
+  }
+  .Nav-items {
+    display: flex;
+  }
+  .Message-icon {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Navbar-Menu{
+    position:absolute;
+    right:20px;
+    margin:0x;
+    padding:0px;
+     cursor: pointer;
+
+  }
+  .Navbar {
+    flex-direction: row;
+    justify-content:space-between;
+    height: 56px;
+    padding: 0 10px;
+  }
+  
+  .Nav-items {
+    display: none !important;
+  }
+
+  .Nav-item {
+    margin: 10px 0;
+  }
+  .eyantra-Logo {
+    margin-left: 16px;
+    margin-top: 8px;
+    height: 36px;
+    width: 36px;
+  }
+  .Message-icon {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+   .Navbar{
+    justify-content:space-between;
+  }
+  .side-bar-both-view {
+    width: 90vw;
+  }
+  .Close-btn-message {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 340px) {
+   .Navbar{
+   
+    justify-content:space-between;
+  }
+  .Navbar {
+    height: 44px;
+  }
+  .eyantra-Logo {
+    height: 26px;
+    width: 26px;
+  }
+  .Nav-Anchor {
+    font-size: 13px;
+  }
+}
+
+
+.More-Dropdown {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  list-style: none;
+  padding: 8px 0;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.More-Dropdown .Nav-item {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.More-Dropdown .Nav-item:hover {
+  background: #f0f0f0;
+}
+/* Sidebar root */
+.ps-sidebar-root {
+  height: 100vh !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+/* Menu item hover */
+.ps-menu-button:hover {
+  background-color: #f0f0f0 !important;
+  color: #333 !important;
+}
+
+/* Active menu item */
+.ps-menu-button.active {
+  background-color: #1976d2 !important;
+  color: white !important;
+}

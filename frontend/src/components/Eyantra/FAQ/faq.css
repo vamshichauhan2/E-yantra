@@ -1,0 +1,26 @@
+
+.EyantraFAQ-container{
+    margin: 0px;
+    padding:0px;
+    color:white;
+    margin-left:20px;
+    margin-right:20px;
+    
+    max-height:auto;
+}
+
+.eyantra-query-container{
+    height:auto;
+}
+
+.eyantra-query-container-title{
+    color:orange;
+    text-decoration:none;
+    font-size:20px;
+}
+.eyantra-query-answer{
+    color:rgb(241, 245, 245);
+    font-size:16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}

@@ -1,0 +1,200 @@
+/* resources.css */
+
+/* ===== PAGE STYLING ===== */
+.publicresources-page {
+  padding: clamp(20px, 4vw, 60px);
+  margin: auto;
+  background:black;
+  min-height: 140vh;
+  max-height:auto ;
+  width: 100vw;
+  font-family: 'Arial', sans-serif;
+}
+
+.publicresources-page h1 {
+  text-align: center;
+  font-size: clamp(1.8rem, 2vw + 1rem, 3rem);
+  margin-bottom: clamp(20px, 4vw, 40px);
+  color:white;
+}
+
+/* ===== LIST LAYOUT ===== */
+.publicresources-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: clamp(10px, 2vw, 25px);
+  justify-items: center;
+}
+
+/* ===== RESOURCE CARD ===== */
+.publicresource-card {
+  background:rgb(45, 45, 45);
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  min-height: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: clamp(15px, 2vw, 25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 8px;
+}
+
+.publicresource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.publicresource-card h3 {
+  margin: 10px 0;
+  font-size: clamp(1.2rem, 1vw + 1rem, 1.6rem);
+ color:rgb(220, 220, 220);
+ font-family:fantasy;
+ font-size:16px;
+}
+
+.publicresource-card p {
+  margin: 8px 0;
+  font-size: clamp(0.9rem, 0.8vw + 0.6rem, 1rem);
+  line-height: 1.5;
+  color: #c8c8c8;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* ===== LINKS ===== */
+.publicresource-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: clamp(8px, 1vw, 12px) clamp(12px, 1.5vw, 18px);
+  background: #1976d2;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.publicresource-link:hover {
+  background: #0f5aa5;
+  transform: scale(1.05);
+}
+
+/* ===== YOUTUBE VIDEO EMBED ===== */
+.publicvideo-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 15px;
+}
+.publicvideo-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+}
+
+/* ===== ADD ICON ===== */
+.publicAddIcon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background:black;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.publicAddIcon:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+.publicremove-btn {
+  height: 20px;
+  width: 20px;
+  color:white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Extra Small (phones <480px) */
+@media (max-width: 479px) {
+  .publicresources-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .publicresource-card {
+    max-width: 100%;
+  }
+  .publicvideo-container {
+
+  width: 90%;
+  
+}
+}
+/* Small (phones) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .publicresources-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .publicvideo-container {
+
+  width: 96%;
+  
+}
+}
+
+/* Medium (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .publicresources-list {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+/* Large (small laptops/desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .publicresources-list {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+}
+
+/* Extra Large (large desktops) */
+@media (min-width: 1200px) {
+  .publicresources-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+.publicresources-heading{
+  color:white;
+  font-size:20px;
+  font-family: fantasy;
+}
+.publicresources-description{
+  color:#c8c8c8;
+    font-size:16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom:20px;
+  
+
+}
+.publicresources-list{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.publicresources-text-empty{
+  color:white;
+  font-family: fantasy;
+}

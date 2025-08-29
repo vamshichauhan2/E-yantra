@@ -1,0 +1,22 @@
+.About-Page{
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+    max-height:auto;
+    
+    min-width:300px;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+}
+.About-Page-heading{
+    color:white;
+     font-size:20px;
+     font-family: fantasy;
+}
+.About-Page-paragraph{
+    color:rgb(162, 162, 162);
+     font-size:14px;
+     font-family: fantasy;
+}
+

@@ -1,0 +1,159 @@
+.notifications-page {
+  width: 100vw;
+  min-height: 100vh;
+ 
+  background-color: white;
+  margin: 0 auto;
+  /*padding: 30px 20px;*/
+  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #282c34;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 25px;
+  margin-top: 60px;
+  font-family: sans-serif;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 18px;
+  margin: 0 auto;
+}
+
+.notification-card {
+  position: relative;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+  border-left: 5px solid #61dafb;
+  transition: box-shadow 0.3s ease;
+}
+
+.notification-card:hover {
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.notification-card p {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #444;
+}
+.Top-Icons-delete-All-plus{
+  margin-top:60px;
+}
+
+.notification-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.notification-link:hover {
+  text-decoration: underline;
+}
+
+.AddIcon-Notification{
+  position: absolute;
+  right:0px;
+  top:80px;
+}
+.icon-Image-Notification-delete-update{
+   position: absolute;
+
+  
+  top:0px;
+  right:0px;
+}
+.icon-Image-delete,
+.icon-Image-update{
+    height:30px;
+ 
+}
+
+/* Responsive Design */
+
+/* Small devices (phones max-width 480px) */
+@media (max-width: 480px) {
+  .notifications-page {
+    padding: 20px 15px;
+  }
+  h1 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  .notifications-list {
+    width: 100%;
+    gap: 12px;
+  }
+  .notification-card {
+    padding: 15px 18px;
+    border-left-width: 4px;
+  }
+  .notification-card p {
+    font-size: 0.9rem;
+  }
+  .notification-link {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablets (min-width: 481px and max-width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .notifications-page {
+    padding: 25px 20px;
+  }
+  h1 {
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .notifications-list {
+    width: 90%;
+    gap: 15px;
+  }
+  .notification-card {
+    padding: 18px 22px;
+    border-left-width: 5px;
+  }
+  .notification-card p {
+    font-size: 0.95rem;
+  }
+  .notification-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktops and larger (min-width: 769px) */
+@media (min-width: 769px) {
+  .notifications-page {
+    padding: 30px 40px;
+  }
+  h1 {
+    font-size: 25px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .notifications-list {
+    width: 80%;
+    gap: 18px;
+  }
+  .notification-card {
+    padding: 20px 25px;
+    border-left-width: 5px;
+  }
+  .notification-card p {
+    font-size: 1rem;
+  }
+  .notification-link {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,78 @@
+.club-coordinator-Image{
+    height:160px;
+    width:160px;
+    border-radius:5px;
+}
+.coordinator-name{
+    color:rgb(72, 72, 72);
+    font-size:18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.strong-letter{
+    color:black;
+}
+.coordinator-details{
+    display: flex;
+   padding-left:10px;
+    flex-direction: column;
+    background-color:white;
+    justify-content: center;
+    
+    width:100%;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.club-cooradinator-name{
+     background:rgb(0, 106, 255);
+     color:white;
+     font-size:17px;
+     text-align: center;
+}
+.club-coordinator-Image-and-Name-container {
+  background: white;
+
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+  border-radius:20px;
+  
+  max-width: 330px;
+  cursor: pointer;
+}
+.coordinator-details:hover,
+.club-coordinator-Image-and-Name-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 1);
+}
+
+@media(max-width:767px){
+    .coordinator-details{
+        margin-left:20%;
+    }
+    .club-coordinator{
+         width:100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     
+        gap:20px;
+      
+}
+
+}
+@media(min-width:768px){
+    .club-coordinator{
+        
+        padding-left:20px ;
+        padding-right:20px;
+        display: flex;
+        width:100%;
+        gap:40px;
+        margin-top:60px;
+        
+    
+}
+
+
+}

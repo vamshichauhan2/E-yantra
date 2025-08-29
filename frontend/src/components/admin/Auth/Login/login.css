@@ -1,0 +1,69 @@
+.Login-Page {
+    margin:0px;
+    padding:0px;
+    background-color:black;
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    color:white;
+    align-items: center;
+    justify-content: center;
+}
+.Login-Form{
+    margin:0px;
+  
+    padding:0px;
+     width:300px;
+     min-height:450px;
+     max-height:600px;
+     background-color:rgb(93, 93, 93);
+     display: flex;
+     flex-direction: column;
+     padding:20px;
+}
+.userInput-Login-Login{
+    position: relative;
+    margin-top:20px;
+    height:40px;
+    width:250px !important;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom:2px solid  white;
+}
+.submit-btn-btn{
+   
+    background-color:white;
+    width:150px;
+    color:black;
+    font-size:12px;
+    
+    text-align: center;
+    margin-top:40px ;
+}
+.submit-btn-btn:hover{
+   
+    background-color:green;
+    
+    color:white;
+    
+}
+.switch-program{
+
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin:0;
+    padding:0;
+    margin-top:30px;
+}
+.eye-icon{
+    
+              position: absolute;
+              right:10px;
+              top:70%;
+              transform:translateY(-50%);
+              cursor:pointer;
+              color:white;
+           
+}
