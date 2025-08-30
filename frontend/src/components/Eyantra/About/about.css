@@ -1,3 +1,7 @@
+body{
+     background-color:black !important;
+}
+
 .About-Page{
     display:flex;
     flex-direction: column;
