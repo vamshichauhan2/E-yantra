@@ -20,7 +20,7 @@ body,
   position: relative;
   background: url('/HomePageBackground2.jpeg') center/cover no-repeat;
   width: 100vw;
-
+ background-color:black;
   min-height: 500px;
 
   max-height: 100vh;
