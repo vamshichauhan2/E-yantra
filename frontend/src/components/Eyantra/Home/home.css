@@ -24,6 +24,7 @@ body,
   margin: 0;
   padding: 20px 0 0 0;
   background: url('/HomePageBackground2.jpeg') center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.7) !important;
   z-index: 1;
 }
 
