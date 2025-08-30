@@ -26,7 +26,8 @@ const __dirname = path.dirname(__filename);
 // Define allowed origins properly
 const allowedOrigins = [
   'http://localhost:5173',                  // dev
-  'https://e-yantra-backend.onrender.com'    // deployed frontend
+  'https://e-yantra-backend.onrender.com' 
+  // deployed frontend
 ];
 
 
