@@ -39,7 +39,7 @@ function encrypt(text) {
 router.delete('/delete/all/user', async (req, res) => {
   try {
     const { email, password } = req.body;
-    const COORDINATOR_EMAIL = "eyantraclub@nitandhra.ac.in";
+    const COORDINATOR_EMAIL = "flowfix07@gmail.com";
    
 
     if (email !== COORDINATOR_EMAIL ) {
