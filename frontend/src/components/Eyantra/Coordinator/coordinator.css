@@ -46,9 +46,7 @@
 }
 
 @media(max-width:767px){
-    .coordinator-details{
-        margin-left:20%;
-    }
+   
     .club-coordinator{
          width:100%;
       display: flex;
