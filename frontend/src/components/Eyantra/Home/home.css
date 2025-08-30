@@ -1,45 +1,24 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body,
-#root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #333;
-   
-  margin: 0 !important;
-  padding: 0 !important;
-  font-size: 16px;
-}
+.Home-Page{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction:column;
 
-.Home-Page {
+align-items: center;  background-color: black;
+  min-height:300vh;
+  width:100vw;
+  max-height:auto;
+}
+.PublicHome-Page{
   position: relative;
+  background: url('/HomePageBackground2.jpeg') center/cover no-repeat;
   width: 100vw;
   min-height: 500px;
-  max-height: 100vh;
+  max-height:100vh;
   margin: 0;
-  padding: 20px 0 0 0;
-  background: url('/HomePageBackground2.jpeg') center/cover no-repeat;
-  z-index: 1;
-  
-}
-.Home-Page{
-   background-color:black !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Home-Page::before {
-  content: "";
-  position: absolute;
-  inset: 0; /* top:0, right:0, bottom:0, left:0 */
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  z-index: -1;
+  padding:0px ;
+    padding-top:20px;
 }
 
 
@@ -58,10 +37,6 @@ body,
   display: inline-block;
   animation: slide-in 2s forwards;
 }
-
-
-
-
 .Home-Page-Top-Content {
      margin:0px;
      padding:0px;
@@ -114,15 +89,8 @@ body,
   color:white;
   flex-shrink: 0;
 }
- .Home-Page-Top-Content {
-     margin:0px;
-     padding:0px;
-     width:100%;
-     
-     display: flex;
 
 
-}
 
 @keyframes notificationSlider {
   from { transform: translateX(0); }
@@ -130,221 +98,260 @@ body,
 }
 
 
-@media (max-width: 575.98px) { 
-  .Home-Page-Top-Content {
+.vision{
+  margin:0px;
+  padding:0px;
+}
+.mission{
+  margin:0px;
+  padding:0px;
+}
+.vision-mission{
+  margin:0px;
+  padding:0px;
+
+}
+@media(max-width: 767.98px){
+/* ========= Base Styles (Mobile First) ========= */
+
+
+
+
+
+.home-stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.home-stat-card {
+  background-color: rgb(63, 63, 63);
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-stat-card h2 {
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  font-family: fantasy;
+}
+.home-stat-card p {
+  margin: 0;
+  font-size: 14px;
+  color: rgb(201, 201, 201);
+  font-family: fantasy;
+}
+.home-stat-card h3 {
+  margin: 0;
+  font-size: 14px;
+  color: green;
+  font-family: fantasy;
+}
+
+
+
+.Home-Club-Content span {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(213, 213, 213);
+}
+
+/* Merge vision + mission */
+.vision,
+.mission {
+  color: rgb(174, 174, 174);
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Shared our-works / cards styles */
+.our-works {
+  text-align: center;
+}
+
+.slider-card-Large-device {
+  display: none;
+}
+
+.slider-card-Small-device {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.slider-card {
+  background-color: rgb(62, 62, 62);
+  width: 250px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+.Slider-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.Slider-card-inner p {
+  color: rgb(174, 174, 174);
+  font-size: 13px;
+  margin: 0;
+  font-family: sans-serif;
+}
+.image-container-ourworks {
+  margin: 0;
+  padding: 0;
+}
+.image-container-ourworks h4 {
+  margin: 0;
+  color: rgb(221, 221, 221);
+}
+
+.our-works-heading {
+  color: white;
+  font-size: 16px;
+  margin-top: 100px;
+}
+.our-works-paragraph {
+  margin-top: 10px;
+  font-size: 14px;
+  color: aliceblue;
+}
+
+.Team-Container {
+  position: relative;
+  width: 90vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========= Extra Small Devices (≤575.98px) ========= */
+@media (max-width: 575.98px) {
+  .Home-Club-Content {
+    margin-left: 20px;
+    height: 300px;
+  }
+
+  .vision {
+    color: rgb(240, 239, 239);
+  }
+}
+}
+/* ========= Small Devices (576px–767.98px) ========= */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+
+  .vision {
+    color: rgb(240, 239, 239);
+  }
+
+  .Eyantra-Description-Content {
+    display: flex;
+    width: 400px;
+    align-self: flex-end;
+  }
+}
+
+@media(max-width:991.98px)
+
+ {
+  .vision-mission-heading {
+  color: rgb(234, 234, 234);
+  font-family: fantasy;
+}
+.Home-Club-Content h2,
+.Home-Club-Content h3 {
+  margin: 0;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 25px;
+}
+
+  .vision-mission {
+  
+  width: 80%;
+  margin-top: 500px !important; /* consider reducing this */
+  color: white;
+}
+  .PublicHome-Page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+   .Home-Page-Top-Content {
     position: absolute;
     top:120px;
-    flex-direction: column;
+         flex-direction: column;
+         
          
      
 
 
 }
- 
+  
+}
+@media (min-width:576px) and (max-width: 991.98px) { 
+  .Home-Club-Content {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  
+}
 
-.vision-mission{
-  margin:0px;
-  padding:0px;
-  width:80%;
-  margin-top:500px !important;
-}
-.Home-Club-Content{
-    margin-left:20px;
-   height:300px;
-   
-
-}
-.vision-mission-heading{
-  color:rgb(234, 234, 234);
-  font-family: fantasy;
-}
-.vision{
-  margin:0px;
-  padding:0px;
-  color:rgb(240, 239, 239);
-  font-size:14px;
-}
-.mission{
-  margin:0px;
-  padding:0px;
-    color:white;
-  font-size:14px;
-
-}
-.Home-Club-Content h3,
-.Home-Club-Content h2{
-  margin:0px;
-  color:white;
-  font-family: fantasy;
-  font-size:25px;
-}
-.Home-Club-Content span{
-  font-size:20px;
-  font-weight:600;
-  color:rgb(213, 213, 213);
-
-}
-.our-works{
-  text-align: center;
-}
-.slider-card-Large-device{
-  display:none;
-}
-.slider-card-Small-device{
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .slider-card-Small-device{
   align-items: center;
   justify-content: center;
 
-  display:flex;
+  display:none;
   gap:20px;
   flex-wrap: wrap;
 }
-.slider-card{
-  padding:0px;
-  margin:0px;
-  
-  background-color:rgb(62, 62, 62);
-  width:250px;
-  height:300px;
-  
-}
-.Slider-card-inner{
-  margin:0px;
-  padding:0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.image-container-ourworks{
-  margin:0px;
-  padding:0px;
-}
-.Slider-card-inner p{
-  color:rgb(174, 174, 174);
-  font-size:13px;
-    margin:0px;
-  font-family: sans-serif;
-}
-.image-container-ourworks h4{
-  margin:0px;
-  color:rgb(221, 221, 221);
-}
-.our-works-heading{
-  color:white;
-  font-size:16px;
-  margin-top:100px;
-}
-.our-works-paragraph{
-  margin-top:10px;
-  font-size:14px;
-  color:aliceblue;
-}
-.Team-Container{
-  position: relative;
-  width:90vw;
-  margin:0px;
-  padding:0px;
-  
-}
-.home-stats-grid{
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding:0px;
-  margin:0px;
-    margin-top:100px;
-    gap:20px;
-}
-
-.home-stat-card{
-  background-color: rgb(63, 63, 63);
-  width:200px;
-  height:200px;
-  padding:0px;
-  margin:0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-.home-stat-card h2{
-  font-size:18px;
-  color:white;
-  margin:0px;
-  font-family: fantasy;
-}
-.home-stat-card p{
-  margin:0px;
-  font-size:14px;
-  color:rgb(201, 201, 201);
-  font-family: fantasy;
-
-}
-.home-stat-card h3{
-   margin:0px;
-  font-size:14px;
-  color:green;
-  font-family: fantasy;
-
-}
-}
-  
-
-@media (min-width: 576px) and (max-width: 767.98px) { 
 
 
- 
-  .Home-Page-Top-Content {
-    position: absolute;
-    top:120px;
-     flex-direction: column;
-         
-         
-     
 
 
-}
 
-.vision-mission{
-  margin:0px;
-  padding:0px;
-  width:80%;
-  margin-top:500px !important;
-}
-.Home-Club-Content{
-   height:300px;
-   width:400px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-
-}
-.vision-mission-heading{
-  color:rgb(234, 234, 234);
-  font-family: fantasy;
-}
 .vision{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin:0px;
   padding:0px;
   color:rgb(174, 174, 174);
   font-size:14px;
 }
 .mission{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin:0px;
   padding:0px;
     color:rgb(174, 174, 174);
   font-size:14px;
 
 }
-.Home-Club-Content h3,
-.Home-Club-Content h2{
-  margin:0px;
-  color:white;
-  font-family: fantasy;
-  font-size:25px;
-}
+
 .Eyantra-Description-Content{
   display: flex;
   width:400px;
@@ -360,17 +367,7 @@ body,
 .our-works{
   text-align: center;
 }
-.slider-card-Large-device{
-  display:none;
-}
-.slider-card-Small-device{
-  align-items: center;
-  justify-content: center;
 
-  display:flex;
-  gap:20px;
-  flex-wrap: wrap;
-}
 .slider-card{
   padding:0px;
   margin:0px;
@@ -462,13 +459,44 @@ body,
   font-family: fantasy;
 
 }
+.slider-card {
+  background: #00c6ff;
+  color: white;
+  padding: 2rem;
 }
 
+.slider-card h4 {
+  font-family: fantasy;
+  font-size: 25px;
+  margin: 0;
+}
 
+.slider-card p {
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  font-size: 12px;
+  margin: 0;
+}
 
-/* ===========================================================
-   ✅ COMMON STYLES (apply to all devices unless overridden)
-   =========================================================== */
+.Slider-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .Slider-card-inner { flex-direction: column; }
+  .Home-Page-Top-Content { flex-direction: column; }
+}
+
+}
+
+/* ===================
+   COMMON BASE STYLES
+   =================== */
+@media  (min-width:992px){
+  
 
 .slider-card-Small-device {
   align-items: center;
@@ -484,6 +512,12 @@ body,
   flex-direction: column;
 }
 
+.PublicHome-Page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .Home-Club-Content {
   height: 300px;
   width: 400px;
@@ -497,20 +531,18 @@ body,
   font-family: fantasy;
 }
 
-.vision,
-.mission {
-  margin: 0;
-  padding: 0;
-  color: rgb(174, 174, 174);
-  font-size: 14px;
-}
-
 .Home-Club-Content h3,
 .Home-Club-Content h2 {
-  margin: 0;
+  margin: 0px;
   color: white;
   font-family: fantasy;
   font-size: 25px;
+}
+
+.Eyantra-Description-Content {
+  display: flex;
+  width: 400px;
+  align-self: flex-end;
 }
 
 .Home-Club-Content span {
@@ -524,40 +556,41 @@ body,
 }
 
 .slider-card {
-  background: #00c6ff;
-  color: white;
-  padding: 2rem;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(62, 62, 62);
   width: 250px;
   height: 300px;
-}
-
-.slider-card h4 {
-  font-family: fantasy;
-  font-size: 25px;
-  margin: 0;
-}
-
-.slider-card p {
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  font-size: 12px;
-  margin: 0;
+  background: #00c6ff;   /* override */
+  color: white;         /* override */
+  padding: 2rem;        /* override */
 }
 
 .Slider-card-inner {
+  margin: 0px;
+  padding: 0px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
+  align-items: center;
+  justify-content: center;  /* override */
+  gap: 40px;                /* override */
 }
 
 .image-container-ourworks {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Slider-card-inner p {
+  color: rgb(174, 174, 174);
+  font-size: 13px;
+  margin: 0px;
+  font-family: sans-serif;
 }
 
 .image-container-ourworks h4 {
-  margin: 0;
+  margin: 0px;
   color: rgb(221, 221, 221);
 }
 
@@ -576,8 +609,8 @@ body,
 .Team-Container {
   position: relative;
   width: 90vw;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .home-stats-grid {
@@ -585,6 +618,8 @@ body,
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 0px;
+  margin: 0px;
   margin-top: 100px;
   gap: 20px;
 }
@@ -593,6 +628,8 @@ body,
   background-color: rgb(63, 63, 63);
   width: 200px;
   height: 200px;
+  padding: 0px;
+  margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -602,110 +639,91 @@ body,
 .home-stat-card h2 {
   font-size: 18px;
   color: white;
+  margin: 0px;
   font-family: fantasy;
 }
 
 .home-stat-card p {
+  margin: 0px;
   font-size: 14px;
   color: rgb(201, 201, 201);
   font-family: fantasy;
 }
 
 .home-stat-card h3 {
+  margin: 0px;
   font-size: 14px;
   color: green;
   font-family: fantasy;
 }
 
-
-/* ===========================================================
-   🔹 MEDIA QUERIES (only differences for each breakpoint)
-   =========================================================== */
-
-/* 📱 Mobile (below 768px) */
-@media (max-width: 768px) {
-  .Slider-card-inner {
-    flex-direction: column;
-  }
-  .Home-Page-Top-Content {
-    flex-direction: column;
-  }
+.slider-card h4 {
+  font-family: fantasy;
+  font-size: 25px;
+  margin: 0;
 }
 
-/* 📱 Tablet (768px – 991.98px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .vision-mission {
-    width: 80%;
-    margin-top: 500px !important;
-  }
-
-  .vision,
-  .mission {
-    align-items: center;
-    justify-content: center;
-  }
+.slider-card p {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 12px;
+  margin: 0;
 }
 
-/* 💻 Small Laptop (992px – 1199.98px) */
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .vision-mission {
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin-top: 500px !important;
+    margin: 0px;
+    padding: 0px;
   }
 
   .vision {
-    width: 450px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 450px;
+    padding: 0px;
+    color: rgb(174, 174, 174);
+    font-size: 14px;
   }
 
   .mission {
+    margin: 0px;
+    padding: 0px;
     width: 450px;
+    color: rgb(174, 174, 174);
+    font-size: 14px;
   }
 }
 
-/* Base shared styles for ≥1200px screens (covers 1200px upwards) */
-@media (min-width: 1200px) {
-  .slider-card-Small-device {
-    align-items: center;
-    justify-content: center;
-    display: none;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .Home-Page-Top-Content {
-    position: absolute;
-    top: 120px;
-    flex-direction: column;
-  }
-
+/* Large devices (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
   .vision-mission {
     display: flex;
-    margin: 0px;
-    padding: 0px;
     width: 80%;
     margin-top: 500px !important;
+    margin: 0px;
+    padding: 0px;
   }
 
-  .Home-Club-Content {
-    height: 300px;
-    width: 400px;
+  .vision {
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 500px;
+    color: rgb(174, 174, 174);
+    font-size: 14px;
   }
 
-  .vision-mission-heading {
-    color: rgb(234, 234, 234);
-    font-family: fantasy;
-  }
-
-  .vision,
   .mission {
     margin: 0px;
     padding: 0px;
@@ -713,157 +731,36 @@ body,
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 600px;
     color: rgb(174, 174, 174);
     font-size: 14px;
-  }
-  .vision { width: 500px; }
-  .mission { width: 600px; }
-
-  .Home-Club-Content h3,
-  .Home-Club-Content h2 {
-    margin: 0px;
-    color: white;
-    font-family: fantasy;
-    font-size: 25px;
-  }
-
-  .Eyantra-Description-Content {
-    display: flex;
-    width: 400px;
-    align-self: flex-end;
-  }
-
-  .Home-Club-Content span {
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(213, 213, 213);
-  }
-
-  .our-works {
-    text-align: center;
-  }
-
-  .slider-card {
-    background: #00c6ff;
-    color: white;
-    padding: 2rem;
-    width: 250px;
-    height: 300px;
-    margin: 0px;
-  }
-
-  .slider-card h4 {
-    font-family: fantasy;
-    font-size: 25px;
-    margin: 0;
-  }
-
-  .slider-card p {
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    font-size: 12px;
-    margin: 0;
-  }
-
-  .Slider-card-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .image-container-ourworks {
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .Slider-card-inner p {
-    color: rgb(174, 174, 174);
-    font-size: 13px;
-    margin: 0px;
-    font-family: sans-serif;
-  }
-
-  .image-container-ourworks h4 {
-    margin: 0px;
-    color: rgb(221, 221, 221);
-  }
-
-  .our-works-heading {
-    color: white;
-    font-size: 16px;
-    margin-top: 100px;
-  }
-
-  .our-works-paragraph {
-    margin-top: 10px;
-    font-size: 14px;
-    color: aliceblue;
-  }
-
-  .Team-Container {
-    position: relative;
-    width: 90vw;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .home-stats-grid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    margin: 100px 0 0 0;
-    gap: 20px;
-  }
-
-  .home-stat-card {
-    background-color: rgb(63, 63, 63);
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .home-stat-card h2 {
-    font-size: 18px;
-    color: white;
-    font-family: fantasy;
-    margin: 0px;
-  }
-
-  .home-stat-card p {
-    font-size: 14px;
-    color: rgb(201, 201, 201);
-    font-family: fantasy;
-    margin: 0px;
-  }
-
-  .home-stat-card h3 {
-    font-size: 14px;
-    color: green;
-    font-family: fantasy;
-    margin: 0px;
   }
 }
 
-/* 🔹 Override: for 1400px+ only */
+/* Extra large devices (1400px and up) */
 @media (min-width: 1400px) {
   .vision-mission {
-    gap: 60px; /* difference */
-    width: auto; /* override width constraint */
+    display: flex;
+    gap: 60px;
+    margin-top: 500px !important;
+    margin: 0px;
+    padding: 0px;
   }
-  .vision,
+
+  .vision {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(174, 174, 174);
+    font-size: 14px;
+  }
+
   .mission {
-    width: auto; /* reset widths (no fixed 500px/600px here) */
-    justify-content: flex-start; /* remove forced centering if needed */
+    margin: 0px;
+    padding: 0px;
+    color: rgb(174, 174, 174);
+    font-size: 14px;
   }
 }
-
-
 
 .club-coordinator-details{
   margin:0px;
@@ -881,4 +778,5 @@ body,
 
 
 }
+
 
