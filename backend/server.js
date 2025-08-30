@@ -1,4 +1,3 @@
-// Import required modules
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
@@ -6,25 +5,27 @@ dotenv.config();
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import http from 'http';
 import multer from 'multer';
 import { v2 as cloudinary } from 'cloudinary';
 import { Server } from 'socket.io';
 
-// ES module equivalents
+// __filename and __dirname equivalents for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Define allowed origins for CORS
+// Define allowed origins properly
 const allowedOrigins = [
-  'http://localhost:5173',
-  'https://e-yantra-backend.onrender.com'
+  'http://localhost:5173',                  // dev
+  'https://e-yantra-backend.onrender.com' 
+  // deployed frontend
 ];
 
-// Create Express app and HTTP server
+// Create Express app
 const app = express();
+
+// Setup HTTP server (for HTTPS, you'd use https module with certificates)
 const server = http.createServer(app);
 
 // Setup Socket.io server with CORS
@@ -35,34 +36,31 @@ const io = new Server(server, {
   },
 });
 
-// Use CORS middleware
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true,
-}));
+// Middlewares
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    credentials: true,
+  })
+);
 
-// Enable CORS preflight for all routes
-app.options('*', cors());
-
-// Other middlewares
-app.use(bodyParser.json());
+// Use express built-in json parser instead of body-parser package
+app.use(express.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Cloudinary config
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// Multer config
 const storage = multer.diskStorage({
   destination(req, file, cb) {
     cb(null, './uploads');
@@ -78,7 +76,7 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('✅ MongoDB connected'))
   .catch(err => console.error('❌ MongoDB connection error:', err));
 
-// Force HTTPS in production
+// Redirect HTTP to HTTPS in production
 app.use((req, res, next) => {
   if (req.headers['x-forwarded-proto'] !== 'https' && process.env.NODE_ENV === 'production') {
     return res.redirect(`https://${req.headers.host}${req.url}`);
@@ -97,19 +95,43 @@ import statsapi from './apis/statsapi.js';
 import projectsapi from './apis/projectsapi.js';
 import messageapi from './apis/messagesapi.js';
 
-// Use API routes (pass socket.io instance via req)
-app.use('/api', (req, res, next) => { req.io = io; next(); }, optapi);
-app.use('/api/user', (req, res, next) => { req.io = io; next(); }, userapi);
-app.use('/api/eyantra', (req, res, next) => { req.io = io; next(); }, notificationsapi);
+// Use API routes with socket attached to request
+app.use('/api', (req, res, next) => {
+  req.io = io;
+  next();
+}, optapi);
+
+app.use('/api/user', (req, res, next) => {
+  req.io = io;
+  next();
+}, userapi);
+
+app.use('/api/eyantra', (req, res, next) => {
+  req.io = io;
+  next();
+}, notificationsapi);
+
 app.use('/api/res/', resourcesapi);
 app.use('/api/teams/', teamapi);
-app.use('/api/overview/', statsapi);
-app.use('/api/events', (req, res, next) => { req.io = io; next(); }, eventapi);
-app.use('/api/projects/', (req, res, next) => { req.io = io; next(); }, projectsapi);
-app.use('/api/message/', (req, res, next) => { req.io = io; next(); }, messageapi);
 
-// Start the server with correct string interpolation
-const PORT = process.env.PORT;
+app.use('/api/overview/', statsapi);
+
+app.use('/api/events', (req, res, next) => {
+  req.io = io;
+  next();
+}, eventapi);
+
+app.use('/api/projects/', (req, res, next) => {
+  req.io = io;
+  next();
+}, projectsapi);
+
+app.use('/api/message/', (req, res, next) => {
+  req.io = io;
+  next();
+}, messageapi);
+
+const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
