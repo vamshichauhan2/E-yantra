@@ -10,24 +10,29 @@ body,
 #root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: #333;
- background-color:black !important;
+ 
   margin: 0 !important;
   padding: 0 !important;
   font-size: 16px;
 }
 
-
 .Home-Page {
   position: relative;
-  background: url('/HomePageBackground2.jpeg') center/cover no-repeat;
   width: 100vw;
-
   min-height: 500px;
-
   max-height: 100vh;
   margin: 0;
-  padding:0px ;
-    padding-top:20px;
+  padding: 20px 0 0 0;
+  background: url('/HomePageBackground2.jpeg') center/cover no-repeat;
+  z-index: 1;
+}
+
+.Home-Page::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0, right:0, bottom:0, left:0 */
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
 
