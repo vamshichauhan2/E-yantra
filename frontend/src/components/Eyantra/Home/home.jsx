@@ -119,8 +119,8 @@ const Home = () => {
     <eyantraContext.Consumer >
       {(context)=>(
       
-        
-        <div className='Home-Page'>
+         <div className='Home-Page' style={{backgroundColor:'black',margin:0,padding:0}}>
+        <div className='PublicHome-Page'>
               <div className='Notification-Container'>
   {context.notifications && context.notifications.length > 0 ? (
     <ul >
@@ -164,6 +164,7 @@ const Home = () => {
              <img src="./E-yantra-logo" alt=""/>
           </div>
         </div>
+        </div>        
         <div className="vision-mission">
           <div data-aos="fade-up" className='vision'>
             <h2 className='vision-mission-heading'>Vision</h2>
@@ -410,6 +411,7 @@ const Home = () => {
         
        
     </div>
+    
       )}
         
               
@@ -425,3 +427,4 @@ const Home = () => {
 };
 
 export default Home;
+
