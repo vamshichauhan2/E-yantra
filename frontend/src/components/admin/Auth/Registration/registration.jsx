@@ -237,7 +237,7 @@ const Registration = () => {
           
             {(role === 'secretary' || role === 'jointSecretary'||role==='admin') && (
               <>
-                <div style={{margin:0,marginTop:30}}>
+                <div style={{margin:0,marginTop:30,display:'flex'}}>
                   <label className='registration-page-labels' htmlFor="name">Name</label>
                   <input 
                    className='registration-page-inputs'
@@ -249,7 +249,7 @@ const Registration = () => {
                     required
                   />
                 </div>
-                <div style={{margin:0,marginTop:30}}>
+                <div style={{margin:0,marginTop:30,display:'flex'}}>
                   <label className='registration-page-labels' htmlFor="email">Email</label>
                   <input
                    className='registration-page-inputs'
@@ -261,7 +261,7 @@ const Registration = () => {
                     required
                   />
                 </div>
-                <div style={{margin:0,marginTop:30}}>
+                <div style={{margin:0,marginTop:30,display:'flex'}}>
                   <label className='registration-page-labels' htmlFor="year">Year of Study</label>
                   <input
                    className='registration-page-inputs'
@@ -275,7 +275,7 @@ const Registration = () => {
                     required
                   />
                 </div>
-                <div style={{margin:0,marginTop:30}}>
+                <div style={{margin:0,marginTop:30,display:'flex'}}>
                   <label className='registration-page-labels' htmlFor="phone">Phone Number</label>
                   <input
                    className='registration-page-inputs'
