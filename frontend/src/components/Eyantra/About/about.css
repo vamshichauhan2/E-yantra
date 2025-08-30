@@ -3,7 +3,7 @@
     flex-direction: column;
     min-height:100vh;
     max-height:auto;
-    background-color:black;
+   background-color:black !important;
     min-width:300px;
     align-items: center;
     justify-content: center;
