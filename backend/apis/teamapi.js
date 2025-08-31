@@ -10,11 +10,13 @@ router.post('/add/newMember', async (req, res) => {
 
    if (regex.test(email) || email==="eyantraclub@nitandhra.ac.in"){
   res.status(400).json({failed:"Email Invalid Format"})
+     return;
 }
-  if(indianPhoneRegex.test(phone){
-
+  if(!indianPhoneRegex.test(phone)) {
     res.status(400).json({failed:" Invalid Format of format mobile Number"})
-  }
+    return;
+}
+
   try {
     const newMember = new Team({
   FullName: name,
