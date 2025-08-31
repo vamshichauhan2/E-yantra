@@ -24,7 +24,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <p className='' >
+      <p className='footer-line-end' >
         © {new Date().getFullYear()} NIT ANDHRA PRADESH, E-YANTHRA CLUB. All Rights Reserved.
       </p>
     </footer>
