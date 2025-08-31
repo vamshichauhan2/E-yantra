@@ -5,7 +5,10 @@ import Team from '../Schema/team.js';
 
 router.post('/add/newMember', async (req, res) => {
   const { name,gender, email, role, studyYear, phone, bio, batch, imageUrl } = req.body;
-  
+    const regex = /^[a-zA-Z0-9._%+-]+@student\.nitandhra\.ac\.in$/;
+    if (rePassword !== password) {
+        return res.status(400).json({ message: "Password mismatch" });
+    }
   try {
     const newMember = new Team({
   FullName: name,
