@@ -160,7 +160,7 @@ const Home = () => {
 
           </div>
           <div data-aos="fade-right" className='Eyantra-Description-Content'>
-             <p className='eyantra-description '>   The E-Yantra Club at NIT Andhra Pradesh is a student group passionate about building and learning the latest in drones, electric vehicles, and robotics. They conduct workshops and projects to help members gain hands-on experience and stay updated with new technologies. The club fosters a supportive environment for innovation and skill development among engineering students.<FontAwesomeIcon icon={faQuoteLeft} /> <FontAwesomeIcon icon={faQuoteRight} /></p>
+             <p className='eyantra-description '>  <FontAwesomeIcon icon={faQuoteLeft} /> The E-Yantra Club at NIT Andhra Pradesh is a student group passionate about building and learning the latest in drones, electric vehicles, and robotics. They conduct workshops and projects to help members gain hands-on experience and stay updated with new technologies. The club fosters a supportive environment for innovation and skill development among engineering students. <FontAwesomeIcon icon={faQuoteRight} /></p>
              <img src="./E-yantra-logo" alt=""/>
           </div>
         </div>
