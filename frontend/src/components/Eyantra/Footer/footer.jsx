@@ -23,7 +23,7 @@ const Footer = () => {
             <a className='follow-us-Anchor-Tag'  href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
       </div>
-
+      <hr/>
       <p className='footer-line-end' >
         © {new Date().getFullYear()} NIT ANDHRA PRADESH, E-YANTHRA CLUB. All Rights Reserved.
       </p>
