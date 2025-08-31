@@ -6,9 +6,15 @@ import Team from '../Schema/team.js';
 router.post('/add/newMember', async (req, res) => {
   const { name,gender, email, role, studyYear, phone, bio, batch, imageUrl } = req.body;
     const regex = /^[a-zA-Z0-9._%+-]+@student\.nitandhra\.ac\.in$/;
-    if (rePassword !== password) {
-        return res.status(400).json({ message: "Password mismatch" });
-    }
+  const indianPhoneRegex = /^[6-9]\d{9}$/;
+
+   if (regex.test(email) || email==="eyantraclub@nitandhra.ac.in"){
+  res.status(400).json({failed:"Email Invalid Format"})
+}
+  if(indianPhoneRegex.test(phone){
+
+    res.status(400).json({failed:" Invalid Format of format mobile Number"})
+  }
   try {
     const newMember = new Team({
   FullName: name,
