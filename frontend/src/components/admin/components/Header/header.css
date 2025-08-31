@@ -92,12 +92,19 @@
 .Close-btn-message {
   margin-left: 30px;
 }
+
+.Nav-Items-Mobile{
+   width:70%;
+   margin-left:30%;
+   
+   
+}
   .Nav-Items-Mobile,
   .Nav-Items-Mobile-view {
     width: 350px;
     display: flex;
     flex-direction: column;
-   padding-left:50px;
+ 
   
     position: absolute;
     top: 60px;
