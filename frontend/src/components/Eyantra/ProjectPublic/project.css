@@ -97,7 +97,8 @@
 }
 .publicproject-cards-container-h4{
   color:white;
-  font-family:fantasy;
+  font-family:Roboto;
+  font-weight:700;
   display: flex;
   align-self:center;
   text-align: center;
