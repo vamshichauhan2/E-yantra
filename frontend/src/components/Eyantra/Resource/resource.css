@@ -52,7 +52,7 @@
   margin: 10px 0;
   font-size: clamp(1.2rem, 1vw + 1rem, 1.6rem);
  color:rgb(220, 220, 220);
- font-family:fantasy;
+ font-family:Roboto;
  font-size:16px;
 }
 
@@ -178,7 +178,7 @@
 .publicresources-heading{
   color:white;
   font-size:20px;
-  font-family: fantasy;
+  font-family: Roboto;
 }
 .publicresources-description{
   color:#c8c8c8;
@@ -197,5 +197,5 @@
 }
 .publicresources-text-empty{
   color:white;
-  font-family: fantasy;
+  font-family: Roboto;
 }
