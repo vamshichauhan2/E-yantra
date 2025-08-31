@@ -79,10 +79,10 @@ const PublicResources = () => {
         <h3>{resource.title}</h3>
         <p>{resource.description}</p>
         <p>
-          <strong style={{fontFamily:'fantasy'}}>Type:</strong> {resource.resourcetype}
+          <strong style={{fontFamily:'serif'}}>Type:</strong> {resource.resourcetype}
         </p>
         <p>
-          <strong style={{fontFamily:'fantasy'}}>Date Shared:</strong> {getdate(resource.sharedOn) || "N/A"}
+          <strong style={{fontFamily:'serif'}}>Date Shared:</strong> {getdate(resource.sharedOn) || "N/A"}
         </p>
 
        
