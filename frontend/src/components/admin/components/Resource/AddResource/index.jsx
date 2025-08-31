@@ -138,7 +138,8 @@ const ResourceForm = ({ onAddResource, onClose }) => {
         </div>
       )}
 
-      <button type="submit" className="resourcet-form-button" style={{ marginTop: 16, width: '100%' }}>
+      <button type="submit" className="resource-form-button" >
+
         Add Resource
       </button>
     </form>
