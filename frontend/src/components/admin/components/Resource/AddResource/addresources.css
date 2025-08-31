@@ -59,7 +59,7 @@
 }
 
 .resource-form__button {
-  background-color:blue;
+  
   color:white;
   font-weight: 600;
   padding: 12px 20px;
@@ -69,6 +69,7 @@
   font-size: 1.1rem;
   width: 100%;
   transition: background-color 0.3s ease;
+  background-color:blue !important;
 }
 
 .resource-form__button:hover {
