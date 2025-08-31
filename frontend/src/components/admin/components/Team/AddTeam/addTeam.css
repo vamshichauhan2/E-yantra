@@ -38,7 +38,7 @@
 
   border: none;
   outline: none;
-  color:white;
+  color:white !important;
   border-bottom: 1px solid #ccc;
   background:transparent;
   border-radius: 4px;
