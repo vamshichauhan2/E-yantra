@@ -126,7 +126,7 @@ const Contact = () => {
               />
             </div>
 
-            <button type='submit'>Send Message</button>
+            <button style={{color:"black";}}type='submit'>Send Message</button>
           </form>
 
          
