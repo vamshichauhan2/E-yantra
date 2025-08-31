@@ -117,8 +117,9 @@ const AdminHeader = () => {
                <li className='Nav-item'>
                 <Link className="Nav-Anchor" to="/admin/resetusers">Reset Users</Link>
               </li>
-              <li className="Nav-item">
-                <img onClick={openMessageDrawer} className="Message-icon" src="../icons8-notifications-50.png" alt="notifications" />
+          <li className="Nav-item">
+            {/* <img onClick={openMessageDrawer} className="Message-icon" src="../icons8-notifications-50.png" alt="notifications" />*/}
+               <Link className="Nav-Anchor" onClick={openMessageDrawer}>Messages</Link>
               </li>
             </ul>
           )}
@@ -163,12 +164,14 @@ const AdminHeader = () => {
             <li className="Nav-item"><Link onClick={() => setMobileSidebarToggled(false)} className="Nav-Anchor" to="/admin/team">Team</Link></li>
             <li className="Nav-item"><Link onClick={() => setMobileSidebarToggled(false)} className="Nav-Anchor" to="/admin/projects">Project</Link></li>
             <li className="Nav-item">
-              <img 
+             
+               {/* <img 
                 onClick={() => { openMessageDrawer(); setMobileSidebarToggled(false); }} 
                 className="Message-icon" 
                 src="../icons8-notifications-50.png" 
                 alt="notifications" 
-              />
+              /> */}
+               <Link className="Nav-Anchor"   onClick={() => { openMessageDrawer(); setMobileSidebarToggled(false); }} >Messages</Link>
             </li>
             <li className="Nav-item">
               <p onClick={() => { openChangePasswordDrawer(); setMobileSidebarToggled(false); }} className="Nav-Anchor">Change Password</p>
@@ -205,14 +208,16 @@ const AdminHeader = () => {
               <li className="Nav-item"><Link className="Nav-Anchor" to="/admin/resources">Resources</Link></li>
               <li className="Nav-item"><Link className="Nav-Anchor" to="/admin/team">Team</Link></li>
               <li className="Nav-item"><Link className="Nav-Anchor" to="/admin/projects">Project</Link></li>
-              <li className="Nav-item">
-                <img 
-                  onClick={() => { setMessageDrawerOpen(true); setDrawerOpen(false); }} 
-                  className="Message-icon" 
-                  src="../icons8-notifications-50.png" 
-                  alt="notifications" 
-                />
-              </li>
+             <li className="Nav-item">
+             
+               {/* <img 
+                onClick={() => { openMessageDrawer(); setMobileSidebarToggled(false); }} 
+                className="Message-icon" 
+                src="../icons8-notifications-50.png" 
+                alt="notifications" 
+              /> */}
+               <Link className="Nav-Anchor"   onClick={() => { openMessageDrawer(); setMobileSidebarToggled(false); }} >Messages</Link>
+            </li>
               <li className="Nav-item">
                 <p onClick={() => { openChangePasswordDrawer(); setDrawerOpen(false); }} className="Nav-Anchor">
                   Change Password
