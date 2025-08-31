@@ -5,6 +5,7 @@
   padding: clamp(20px, 4vw, 60px);
   margin: auto;
   background:black;
+  padding-top:80px;
   min-height: 140vh;
   max-height:auto ;
   width: 100vw;
