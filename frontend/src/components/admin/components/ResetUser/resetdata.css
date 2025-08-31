@@ -104,3 +104,9 @@
   text-align: center;
   color: #333;
 }
+
+@media(max-width:768px){
+.delete-container{
+    flex-direction:column;
+}
+    
