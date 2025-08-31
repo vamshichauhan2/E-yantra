@@ -58,9 +58,9 @@
   cursor: pointer;
 }
 
-.resource-form__button {
+.resource-form-button {
   
-  color:black;
+  color:black !important;
   font-weight: 600;
   padding: 12px 20px;
   border: none;
@@ -72,7 +72,7 @@
   
 }
 
-.resource-form__button:hover {
+.resource-form-button:hover {
   background-color: #155a9c !important;
   color:white !important;
 }
